@@ -16,6 +16,7 @@ with open("input5.txt") as f:
     f.readline()
     lines = [x.strip().split(" ") for x in f.readlines()]
 
+# task 1
 # for line in lines:
 #     n, start, end = [int(num) for num in [line[1], line[3], line[5]]]
 
@@ -27,6 +28,7 @@ with open("input5.txt") as f:
 # for stack in stacks:
 #     print(stack.pop())
 
+# task 2
 for line in lines:
     n, start, end = [int(num) for num in [line[1], line[3], line[5]]]
     el = []
@@ -36,7 +38,6 @@ for line in lines:
 
     while len(el) > 0:
         stacks[end - 1].append(el.pop())
-        n -= 1
 
 
 for stack in stacks:
