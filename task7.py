@@ -23,10 +23,8 @@ for line in lines:
 
 
 # task 1
-output = 0
-for val in size_of_dir.values():
-    if val <= 100000:
-        output += val
+output = sum(list(filter(lambda x: x <= 100000, size_of_dir.values())))
+
 print(output)
 
 # task 2
